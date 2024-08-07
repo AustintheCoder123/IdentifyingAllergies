@@ -11,5 +11,16 @@ My project aims to completely remove the need for that effort. By using machine 
 
 ## Running This Project
 1. First, set up a connection to your Jetson Nano using an SSH connection, and starting up a functioning terminal.
-2. Then, you will have to download the "jetson-inference" library. Follow the steps below to do so. If already completed, you can skip to step [FILL IN].
-3. In your terminal window, 
+2. Then, you will have to download the "jetson-inference" library. Follow the steps below to do so. If already completed, you can skip to step 14 to run the A.I. model.
+3. In your terminal window, run `sudo apt-get update` to ensure that your installer is up to date.
+4. Then, you have to install CMake. Run `sudo apt-get install git cmake`.
+5. Then, clone the "jetson-inference" library by running `git clone --recursive https://github.com/dusty-nv/jetson-inference`.
+6. Once that finishes cloning, go into your jetson-inference directory by running `cd jetson-inference`.
+7. Then, update the modules inside the folder. Run `git submodule update --init`.
+8. You also need to download some other necessary python packages for this to work. Run `sudo apt-get install libpython3-dev python3-numpy`.
+9. Next, run `mkdir build` to make a folder called "build" inside of your current directory.
+10. Move into the build directory using `cd build`
+11. Run "make" to build the project. Run `cmake ../` then `make` separately.
+12. Then, run `sudo make install` to install "make".
+13. Now, configure it. Run `sudo ldconfig`.
+14. 
