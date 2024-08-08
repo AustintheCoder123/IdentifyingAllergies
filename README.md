@@ -43,5 +43,5 @@ The foods included in this dataset are:
 18. Also, download the "run.py" file and put it in the same folder as "resnet18.onnx"
 19. Then, open a new terminal in VS Code, enter your Jetson Nano username and password if prompted.
 20. Type in this command `cd jetson-inference/python/training/classification` to navigate to that directory.
-21. Next, run `FILL IN COMMAND`.
+21. Next, run `FILL IN COMMAND`!!!!!!!!!.
 22. P.S you can freely customize the last two arguments; the first one is the input image, while the second one is the output. You can pick whatever image you want from the internet, you can download it, and put it into VS Code. Simply fill in "(enter your input image path here)" and you can run that through the A.I. model instead!
