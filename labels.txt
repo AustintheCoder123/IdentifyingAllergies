@@ -1,0 +1,11 @@
+apple_pie
+cheesecake
+chicken_curry
+french_fries
+fried_rice
+hamburger
+hot_dog
+ice_cream
+omelette
+pizza
+sushi
