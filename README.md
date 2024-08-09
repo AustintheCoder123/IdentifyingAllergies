@@ -12,17 +12,17 @@ The machine that I am using, the Jetson Nano, is a machine specifically designed
 The original plan after training was complete was to integrate the ChatGPT API as part of this project, where you take the output of the engine's image recognization and feed it to the API, and letting it return the ingredients. However, I was running short on time due to the sheer amount of images there were (over 10,000), so I had to put that idea aside for now and focus on completing the rest of the project. Although it might not be possible at the moment, the thought of integrating ChatGPT as part of this project is very intriguing, and I definitely plan on implementing that in the future.
 
 The foods included in this dataset are:
-> Applie pie
-> Cheesecake
-> Chicken curry
-> French fries
-> Fried rice
-> Hamburgers
-> Hotdogs
-> Ice cream
-> Omelette
-> Pizza
-> Sushi
+- Apple pie
+- Cheesecake
+- Chicken curry
+- French fries
+- Fried rice
+- Hamburgers
+- Hotdogs
+- Ice cream
+- Omelette
+- Pizza
+- Sushi
 
 ## Running This Project
 1. First, set up a connection to your Jetson Nano using an SSH connection, and starting up a functioning terminal.
