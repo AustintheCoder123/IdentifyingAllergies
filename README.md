@@ -12,17 +12,17 @@ The machine that I am using, the Jetson Nano, is a machine specifically designed
 The original plan after training was complete was to integrate the ChatGPT API as part of this project, where you take the output of the engine's image recognization and feed it to the API, and letting it return the ingredients. However, I was running short on time due to the sheer amount of images there were (over 10,000), so I had to put that idea aside for now and focus on completing the rest of the project. Although it might not be possible at the moment, the thought of integrating ChatGPT as part of this project is very intriguing, and I definitely plan on implementing that in the future.
 
 The foods included in this dataset are:
- • Apple pies
- • Cheesecake
- • 
- • FILL IN
- • 
- •
- •
- •
- •
- •
- •
+> Applie pie
+> Cheesecake
+> Chicken curry
+> French fries
+> Fried rice
+> Hamburgers
+> Hotdogs
+> Ice cream
+> Omelette
+> Pizza
+> Sushi
 
 ## Running This Project
 1. First, set up a connection to your Jetson Nano using an SSH connection, and starting up a functioning terminal.
@@ -43,7 +43,13 @@ The foods included in this dataset are:
 16. In the Explorer tab on the left, click "Open Folder" and click on the first option in the search bar at the top of the screen.
 17. Download the file "resnet18.onnx" from this Github project and put it inside of jetson-inference/python/training/classification folder.
 18. Also, download the "run.py" file and put it in the same folder as "resnet18.onnx"
-19. Then, open a new terminal in VS Code, enter your Jetson Nano username and password if prompted.
-20. Type in this command `cd jetson-inference/python/training/classification` to navigate to that directory.
-21. Next, run `FILL IN COMMAND`!!!!!!!!!.
-22. P.S you can freely customize the last two arguments; the first one is the input image, while the second one is the output. You can pick whatever image you want from the internet, you can download it, and put it into VS Code. Simply fill in "(enter your input image path here)" and you can run that through the A.I. model instead!
+19. Additionally, also download "labels.txt" and put it in the same directory as well.
+20. Then, open a new terminal in VS Code, enter your Jetson Nano username and password if prompted.
+21. Type in this command `cd jetson-inference/python/training/classification` to navigate to the classification directory.
+22. Next, run `python3 run.py --model=resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=labels.txt [INPUT IMAGE PATH HERE] [OUTPUT IMAGE NAME].jpg`.
+23. Remeber to change the last two fields to the correct ones, and try it out!
+24. You can also freely customize the last two arguments; the first one is the input image, while the second one is the output. You can pick whatever image you want from the internet, you can download it, and put it into VS Code. Simply fill in "[INPUT IMAGE PATH HERE]" and you can run that through the A.I. model instead!
+
+Have fun!
+
+Dataset used: food-11 Image Classification Dataset, https://www.kaggle.com/datasets/imbikramsaha/food11
